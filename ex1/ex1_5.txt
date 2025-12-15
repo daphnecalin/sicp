@@ -1,0 +1,26 @@
+Applicative-order evaluation
+In this order, we first evaluate the operator and operands.
+We find the values of subexpressions, then apply the procedure on them.
+
+(test 0 (p))
+
+The argument 0 is already evaluated (terminal node?)
+But, when the interpreter tries to evaluate (p), it uses the definition
+(define (p) (p))
+and replaces (p) with itself in the expression
+(test 0 (p))
+This will go on infinitely and the interpreter will stall.
+
+---
+
+Normal-order evaluation
+In this order, we do not evaluate arguments until their values are needed.
+Expressions are expanded to their complete form before evaluation.
+So, we would start by expanding "test" before expanding its arguments.
+
+(test 0 (p))
+becomes
+(if (= 0 0)
+    0
+    (p))
+This evaluated to 0 and the interpreter avoids an infinite loop.

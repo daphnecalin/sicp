@@ -13,4 +13,4 @@
         (cbrt-iter (improve guess x) guess x)))
 
 (define (cube-root x)
-    (cbrt-iter 1 0 x))
+    (cbrt-iter 1.0 0 x))

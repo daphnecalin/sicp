@@ -1,5 +1,0 @@
-cond is an ordinary procedure, 
-so all of the subexpressions must be evaluated, 
-and the procedure will recurse infinitely.
-"If" as a special form can stop executing after checking whether the guess
-is good enough, so it won't loop forever.

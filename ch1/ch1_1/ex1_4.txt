@@ -1,3 +1,0 @@
-If b is greater than 0, the operator + will be used, (+ a a) => (a + b)
-and otherwise the operator - will be used. (- a b) => (a - b)
-So, a conditional can output a function.

@@ -1,0 +1,1 @@
+P is evaluated 41 times. The order of growth of (sine a) in space and time is linear (O(a)).
